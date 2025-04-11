@@ -1,0 +1,233 @@
+/* ======= Global Settings ======= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f2f4f7;
+    color: #333;
+    line-height: 1.6;
+    padding: 40px;
+}
+
+/* ======= Headings ======= */
+h1, h2, h3 {
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 20px;
+}
+
+/* ======= Container & Cards ======= */
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+}
+
+/* ======= Buttons ======= */
+.btn {
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn-primary {
+    background-color: #3b82f6;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #2563eb;
+}
+
+.btn-secondary {
+    background-color: #e5e7eb;
+    color: #111827;
+}
+
+.btn-secondary:hover {
+    background-color: #d1d5db;
+}
+
+.btn-danger {
+    background-color: #ef4444;
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #dc2626;
+}
+
+.btn-info {
+    background-color: #06b6d4;
+    color: white;
+}
+
+.btn-info:hover {
+    background-color: #0891b2;
+}
+
+/* ======= Table Styling ======= */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.table thead {
+    background-color: #f9fafb;
+    border-bottom: 2px solid #e5e7eb;
+}
+
+.table th, .table td {
+    text-align: center;
+    padding: 14px 12px;
+    font-size: 14px;
+}
+
+.table tbody tr {
+    background-color: white;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.table tbody tr:hover {
+    background-color: #f3f4f6;
+}
+
+/* ======= Status Badges ======= */
+.badge {
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.badge.pending {
+    background-color: #fcd34d;
+    color: #92400e;
+}
+
+.badge.approved {
+    background-color: #4ade80;
+    color: #065f46;
+}
+
+.badge.rejected {
+    background-color: #f87171;
+    color: #7f1d1d;
+}
+
+/* ======= Form Styling ======= */
+form .form-group {
+    margin-bottom: 16px;
+}
+
+label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: block;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    transition: border-color 0.2s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #3b82f6;
+    outline: none;
+}
+
+/* ======= Upload Preview ======= */
+img.event-photo {
+    max-width: 100px;
+    height: auto;
+    margin: 5px;
+    border-radius: 10px;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    cursor: pointer;
+}
+
+img.event-photo:hover {
+    transform: scale(1.05);
+    opacity: 0.85;
+}
+
+/* ======= Filter Section ======= */
+.filter-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+/* ======= Logout Button ======= */
+.logout-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+/* ======= Tabs ======= */
+.nav-tabs .nav-link.active {
+    background-color: #3b82f6;
+    color: white;
+    border-radius: 8px 8px 0 0;
+}
+
+.nav-tabs .nav-link {
+    border: none;
+    font-weight: 600;
+    color: #6b7280;
+}
+
+.nav-tabs {
+    border-bottom: none;
+}
+
+/* ======= Responsive Tables ======= */
+@media (max-width: 768px) {
+    .table thead {
+        display: none;
+    }
+
+    .table tr {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .table td {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        border-bottom: 1px solid #e5e7eb;
+    }
+
+    .table td::before {
+        content: attr(data-label);
+        font-weight: 600;
+        text-align: left;
+    }
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head  class=>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>activity Management</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+       body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 120px;
+
+      background-color: #f5f5f5; /* light gray background */
+
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      z-index: 999;
+    }
+
+    .logo {
+      height: 90px;
+      margin-right: 20px;
+    }
+
+    .heading {
+      font-size: 28px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .container {
+      
+        background-color: #60f3ce; /* light gray background */
+       /* Prevent overlap with fixed header */
+       background-image: url('sitams2.jpg'); /* Replace with your image file name */
+  background-size: cover; /* Or use 'contain' or '100% 100%' based on your need */
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 140px;
+  padding: 40px;
+  min-height: 100vh; /* Makes sure it covers the full height */
+
+    }
+   
+    /* Heading style */
+.container h1 {
+    color: #2dd62d;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+
+.centered-heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: clamp(20px, 2.5vw, 32px);
+
+  font-weight: 900;
+  background: linear-gradient(90deg, #ff6ec4, #7873f5, #4ade80, #facc15, #f87171);
+  background-size: 300%;
+  animation: gradientShift 6s infinite linear;
+  background-clip: text;
+-webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 2px 2px 8px rgba(0, 0, 0, 0.3);
+  letter-spacing: 2px;
+  white-space: nowrap;
+  font-family: 'Segoe UI', 'Poppins', sans-serif;
+  text-align: center;
+  z-index: 10;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% }
+  100% { background-position: 100% }
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="College Logo" class="logo" />
+        <div class="centered-heading">SITAMS ACTIVITY MANAGEMENT SYSTEM</div>
+      </header>
+      
+    <div class="container">
+        <h1>Welcome Management!</h1>
+        <a href="register.php" class="btn">Register</a>
+        <a href="login.php" class="btn">Login</a>
+    </div>
+</body>
+</html>
